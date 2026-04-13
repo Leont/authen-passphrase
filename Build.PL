@@ -44,6 +44,9 @@ Module::Build->new(
 		"warnings" => 0,
 	},
 	dynamic_config => 0,
+	meta_merge => {
+		x_deprecated => 1,
+	},
 )->create_build_script;
 
 1;
