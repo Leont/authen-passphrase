@@ -1,4 +1,4 @@
-{ use 5.006; }
+use 5.006;
 use warnings;
 use strict;
 
@@ -44,9 +44,6 @@ Module::Build->new(
 		"warnings" => 0,
 	},
 	dynamic_config => 0,
-	meta_add => { distribution_type => "module" },
-	create_makefile_pl => "passthrough",
-	sign => 1,
 )->create_build_script;
 
 1;
