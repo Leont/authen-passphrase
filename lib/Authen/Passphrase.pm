@@ -18,6 +18,10 @@ Authen::Passphrase - hashed passwords/passphrases as objects
 
 =head1 DESCRIPTION
 
+B<THIS MODULE IS DEPRECATED>. For a module that's more extensible, and
+less held-back by legacy algorithms, you may want to use
+L<Crypt::Passphrase|Crypt::Passphrase> instead.
+
 This is the base class for a system of objects that encapsulate
 passphrases.  An object of this type is a passphrase recogniser: its
 job is to recognise whether an offered passphrase is the right one.
