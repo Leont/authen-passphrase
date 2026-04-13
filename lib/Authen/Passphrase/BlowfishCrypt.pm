@@ -98,7 +98,7 @@ use strict;
 use Authen::Passphrase 0.003;
 use Carp qw(croak);
 use Crypt::Eksblowfish::Bcrypt 0.008 qw(bcrypt_hash en_base64 de_base64);
-use Data::Entropy::Algorithms 0.000 qw(rand_bits);
+use Crypt::SysRandom 'random_bytes';
 
 our $VERSION = "0.008";
 
@@ -141,8 +141,7 @@ The salt, as a string of 22 base 64 digits.
 =item B<salt_random>
 
 Causes salt to be generated randomly.  The value given for this attribute
-is ignored.  The source of randomness may be controlled by the facility
-described in L<Data::Entropy>.
+is ignored.
 
 =item B<hash>
 
@@ -194,7 +193,7 @@ sub new {
 		} elsif($attr eq "salt_random") {
 			croak "salt specified redundantly"
 				if exists $self->{salt};
-			$self->{salt} = rand_bits(128);
+			$self->{salt} = random_bytes(16);
 		} elsif($attr eq "hash") {
 			croak "hash specified redundantly"
 				if exists($self->{hash}) ||
