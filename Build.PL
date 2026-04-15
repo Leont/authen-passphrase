@@ -46,6 +46,15 @@ Module::Build->new(
 	dynamic_config => 0,
 	meta_merge => {
 		x_deprecated => 1,
+		"meta-spec" => {
+			"version" => 2,
+		},
+		resources => {
+			repository => {
+				type => "git",
+				web => "https://github.com/Leont/authen-passphrase",
+			},
+		},
 	},
 )->create_build_script;
 
