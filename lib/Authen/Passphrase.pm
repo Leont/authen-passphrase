@@ -482,6 +482,8 @@ sub from_rfc2307 {
 
 Checks whether the supplied passphrase is correct.  Returns a truth value.
 
+The passphrase is expected to be octets, not characters.
+
 =item $ppr->passphrase
 
 If a matching passphrase can be easily determined by the passphrase

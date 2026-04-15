@@ -8,12 +8,12 @@ Unix crypt()
 	use Authen::Passphrase::BlowfishCrypt;
 
 	$ppr = Authen::Passphrase::BlowfishCrypt->new(
-		cost => 8,
+		cost => 14,
 		salt => "sodium__chloride",
 		hash_base64 => "BPZijhMHLvPeNMHd6XwZyNamOXVBTPi");
 
 	$ppr = Authen::Passphrase::BlowfishCrypt->new(
-		cost => 8, salt_random => 1,
+		cost => 14, salt_random => 1,
 		passphrase => "passphrase");
 
 	$ppr = Authen::Passphrase::BlowfishCrypt->from_crypt(
