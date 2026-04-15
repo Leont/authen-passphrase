@@ -143,7 +143,7 @@ use Carp qw(croak);
 use MIME::Base64 2.21 qw(decode_base64);
 use Module::Runtime 0.011 qw(use_module);
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 =head1 CONSTRUCTORS
 

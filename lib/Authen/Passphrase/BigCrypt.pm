@@ -75,7 +75,7 @@ use Carp qw(croak);
 use Crypt::UnixCrypt_XS 0.08 qw(base64_to_block base64_to_int12);
 use Crypt::SysRandom 'random_bytes';
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 

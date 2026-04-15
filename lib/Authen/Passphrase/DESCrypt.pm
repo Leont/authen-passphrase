@@ -129,7 +129,7 @@ use Crypt::UnixCrypt_XS 0.08 qw(
 );
 use Crypt::SysRandom 'random_bytes';
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 

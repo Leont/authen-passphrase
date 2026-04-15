@@ -83,7 +83,7 @@ use Authen::Passphrase 0.003;
 use Carp qw(croak);
 use Crypt::SysRandom 'random_bytes';
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 

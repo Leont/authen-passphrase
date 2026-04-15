@@ -69,7 +69,7 @@ use Carp qw(croak);
 use Crypt::SysRandom 'random_bytes';
 use Digest::MD5 1.99_53 ();
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 

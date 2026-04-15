@@ -88,7 +88,7 @@ use Crypt::PasswdMD5 1.0 qw(unix_md5_crypt);
 use Crypt::SysRandom 'random_bytes';
 use MIME::Base64 'encode_base64';
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 

@@ -100,7 +100,7 @@ use Carp qw(croak);
 use Crypt::Eksblowfish::Bcrypt 0.008 qw(bcrypt_hash en_base64 de_base64);
 use Crypt::SysRandom 'random_bytes';
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 

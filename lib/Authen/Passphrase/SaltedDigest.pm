@@ -81,7 +81,7 @@ use MIME::Base64 2.21 qw(encode_base64 decode_base64);
 use Module::Runtime 0.011 qw(is_valid_module_name use_module);
 use Params::Classify 0.000 qw(is_string is_blessed);
 
-our $VERSION = "0.008";
+our $VERSION = "0.009";
 
 use parent "Authen::Passphrase";
 
